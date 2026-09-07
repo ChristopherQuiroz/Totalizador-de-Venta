@@ -1,16 +1,35 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "503258ca9c0c012db88d0f78b1a25358a01a6b49",
     "author": "Chris",
     "commit": {
       "date": "2026-09-07T12:43:29.000Z",
       "message": "chore: Instalacion de dependencias y limpieza de codigo para el proyecto base",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/503258ca9c0c012db88d0f78b1a25358a01a6b49"
     },
     "stats": {
       "total": 44,
       "additions": 2,
       "deletions": 42,
+      "date": "2026-09-07"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-07T13:01:38.000Z",
+      "message": "style: Agregar estructura html que respeta las peticiones del cliente",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 28,
+      "deletions": 0,
       "date": "2026-09-07"
     },
     "coverage": 0,

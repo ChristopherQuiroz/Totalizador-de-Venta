@@ -1,8 +1,14 @@
 [
   {
-    "commitId": "HEAD",
+    "commitId": "503258ca9c0c012db88d0f78b1a25358a01a6b49",
     "commitName": "chore: Instalacion de dependencias y limpieza de codigo para el proyecto base",
     "commitTimestamp": 1788785012337,
     "testId": 0
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: Agregar estructura html que respeta las peticiones del cliente",
+    "commitTimestamp": 1788786099969,
+    "testId": 1
   }
 ]
