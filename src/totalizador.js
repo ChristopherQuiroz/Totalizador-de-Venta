@@ -16,8 +16,20 @@ export default class Totalizador {
     }).length;
   }
 
-  static Message() {
-    return 'Todos los campos deben de estar llenados';
+  static validarItems(documento = globalThis.document) {
+    const campoCantidad = documento?.getElementById('itemAmount');
+
+    if (campoCantidad?.value < 0) {
+        return false;
+    }
+  }
+
+  static Message(error) {
+    if (error === 'Incompleto') {
+        return 'Todos los campos deben de estar llenados';
+    } else {
+        return 'La cantidad de items debe ser mayor a cero';
+    }
   }
 }
 

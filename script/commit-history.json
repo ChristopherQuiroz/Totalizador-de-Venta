@@ -38,12 +38,12 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "a0c459c792c68fa0142b16a7aa751a9b33e72213",
     "author": "Chris",
     "commit": {
       "date": "2026-09-08T12:48:52.000Z",
       "message": "feat: Agregar validador de campos vacios",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/a0c459c792c68fa0142b16a7aa751a9b33e72213"
     },
     "stats": {
       "total": 49,
@@ -53,6 +53,25 @@
     },
     "coverage": 83.33,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-08T13:17:34.000Z",
+      "message": "feat: Agregar error si la cantidad de items es invalida",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 21,
+      "deletions": 3,
+      "date": "2026-09-08"
+    },
+    "coverage": 81.82,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }

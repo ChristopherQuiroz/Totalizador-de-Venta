@@ -52,9 +52,111 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a0c459c792c68fa0142b16a7aa751a9b33e72213",
     "commitName": "feat: Agregar validador de campos vacios",
     "commitTimestamp": 1788871734210,
     "testId": 2
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1788872470466,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1788872764871,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1788872858192,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1788872915143,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1788872945183,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1788873032199,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1788873060682,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 2,
+    "numTotalTests": 2,
+    "timestamp": 1788873128668,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1788873328390,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1788873367535,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1788873384624,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1788873411545,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar error si la cantidad de items es invalida",
+    "commitTimestamp": 1788873456215,
+    "testId": 3
   }
 ]
