@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "71306b83b5042a4aafc95a50deec714805f143cc",
     "author": "Chris",
     "commit": {
       "date": "2026-09-08T13:27:13.000Z",
       "message": "feat: Agregar validador de precio mayor a cero",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/71306b83b5042a4aafc95a50deec714805f143cc"
     },
     "stats": {
       "total": 25,
@@ -90,6 +90,25 @@
       "date": "2026-09-08"
     },
     "coverage": 80,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-08T13:46:04.000Z",
+      "message": "feat: Configuracion para mostrar los mensajes de error en la web",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 68,
+      "additions": 59,
+      "deletions": 9,
+      "date": "2026-09-08"
+    },
+    "coverage": 73.68,
     "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"

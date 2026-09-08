@@ -15,21 +15,27 @@ export default class Totalizador {
       return !campo || String(campo.value).trim() === '';
     }).length;
   }
+  
+  getCamposVacios() {
+    return Totalizador.getCamposVacios(this.documento);
+  }
 
   static validarItems(documento = globalThis.document) {
     const campoCantidad = documento?.getElementById('itemAmount');
 
-    if (campoCantidad?.value < 0) {
+    if (!campoCantidad || Number(campoCantidad.value) <= 0) {
         return false;
     }
+    return true;
   }
 
-  static validarPrecio(documento = globalThis.document){
+  static validarPrecio(documento = globalThis.document) {
     const campoPrecio = documento?.getElementById('itemPrice');
 
-    if(campoPrecio?.value < 0){
+    if (!campoPrecio || Number(campoPrecio.value) <= 0) {
         return false;
     }
+    return true;
   }
 
   static Message(error) {
@@ -41,6 +47,10 @@ export default class Totalizador {
         case 'Precio_invalido':
             return 'El precio por item debe de ser mayor a cero';
     }
+  }
+
+  Message(error) {
+    return Totalizador.Message(error);
   }
 }
 

@@ -19,4 +19,5 @@ describe('Validar el Formulario', ()=>{
             expect(Totalizador.Message("Precio_invalido")).toBe("El precio por item debe de ser mayor a cero");
         }
     })
+
 })

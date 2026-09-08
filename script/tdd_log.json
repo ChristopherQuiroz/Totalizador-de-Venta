@@ -192,9 +192,31 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "71306b83b5042a4aafc95a50deec714805f143cc",
     "commitName": "feat: Agregar validador de precio mayor a cero",
     "commitTimestamp": 1788874035167,
     "testId": 4
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1788874987450,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1788875065823,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Configuracion para mostrar los mensajes de error en la web",
+    "commitTimestamp": 1788875165923,
+    "testId": 5
   }
 ]
