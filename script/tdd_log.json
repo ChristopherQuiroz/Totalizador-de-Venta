@@ -154,9 +154,47 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a1457569b3b6ab113bf2774ffd008ab8ebd5da96",
     "commitName": "feat: Agregar error si la cantidad de items es invalida",
     "commitTimestamp": 1788873456215,
     "testId": 3
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1788873569360,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1788873864563,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 2,
+    "numTotalTests": 3,
+    "timestamp": 1788873963020,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1788873989248,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar validador de precio mayor a cero",
+    "commitTimestamp": 1788874035167,
+    "testId": 4
   }
 ]

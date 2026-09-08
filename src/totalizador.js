@@ -24,11 +24,22 @@ export default class Totalizador {
     }
   }
 
+  static validarPrecio(documento = globalThis.document){
+    const campoPrecio = documento?.getElementById('itemPrice');
+
+    if(campoPrecio?.value < 0){
+        return false;
+    }
+  }
+
   static Message(error) {
-    if (error === 'Incompleto') {
-        return 'Todos los campos deben de estar llenados';
-    } else {
-        return 'La cantidad de items debe ser mayor a cero';
+    switch(error){
+        case 'Incompleto':
+            return 'Todos los campos deben de estar llenados';
+        case 'Items_invalidos':
+            return 'La cantidad de items debe ser mayor a cero';
+        case 'Precio_invalido':
+            return 'El precio por item debe de ser mayor a cero';
     }
   }
 }
