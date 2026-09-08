@@ -4,6 +4,7 @@ const totalizador = new Totalizador(document);
 const formulario = document.querySelector('.form');
 const toast = document.querySelector('#toast');
 let temporizador;
+const codigosValidos = ['UT', 'NV', 'TX', 'AL', 'CA'];
 
 function mostrarMensaje(tipoError) {
   window.clearTimeout(temporizador);
@@ -30,5 +31,11 @@ formulario.querySelector('button').addEventListener('click', (evento) => {
 
 	if (!Totalizador.validarPrecio()) {
 		mostrarMensaje('Precio_invalido');
+		return;
+	}
+
+	const codigo = document.querySelector('#statusCode').value.trim().toUpperCase();
+    if (!codigosValidos.includes(codigo)) {
+		mostrarMensaje('Codigo_invalido');
 	}
 });

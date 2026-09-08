@@ -214,9 +214,39 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a3d70e6d8af7f67c6164ea83d9e3d343d658a3b7",
     "commitName": "feat: Configuracion para mostrar los mensajes de error en la web",
     "commitTimestamp": 1788875165923,
     "testId": 5
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 4,
+    "numTotalTests": 4,
+    "timestamp": 1788875624432,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 1,
+    "numTotalTests": 4,
+    "timestamp": 1788875789522,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1788875840787,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar validador de codigo de estado",
+    "commitTimestamp": 1788876211299,
+    "testId": 6
   }
 ]

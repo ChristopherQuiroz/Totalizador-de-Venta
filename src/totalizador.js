@@ -4,6 +4,8 @@ const campos_formulario = [
   { id: 'statusCode', nombre: 'Código de Estado' },
 ];
 
+const codigosValidos = ["UT", "NV", "TX", "AL", "CA"];
+
 export default class Totalizador {
   constructor(documento = null) {
     this.documento = documento;
@@ -38,14 +40,25 @@ export default class Totalizador {
     return true;
   }
 
+  static validarCodigo(documento = globalThis.document){
+    const campoCodigo = documento?.getElementById('statusCode');
+
+    if(!campoCodigo || !codigosValidos.find(campoCodigo)){
+        return false;
+    }
+    return true;
+  }
+
   static Message(error) {
     switch(error){
         case 'Incompleto':
-            return 'Todos los campos deben de estar llenados';
+            return 'Todos los campos deben de estar llenados.';
         case 'Items_invalidos':
-            return 'La cantidad de items debe ser mayor a cero';
+            return 'La cantidad de items debe ser mayor a cero.';
         case 'Precio_invalido':
-            return 'El precio por item debe de ser mayor a cero';
+            return 'El precio por item debe de ser mayor a cero.';
+        case 'Codigo_invalido':
+            return 'El código de estado es inválido.';
     }
   }
 

@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a3d70e6d8af7f67c6164ea83d9e3d343d658a3b7",
     "author": "Chris",
     "commit": {
       "date": "2026-09-08T13:46:04.000Z",
       "message": "feat: Configuracion para mostrar los mensajes de error en la web",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/a3d70e6d8af7f67c6164ea83d9e3d343d658a3b7"
     },
     "stats": {
       "total": 68,
@@ -110,6 +110,25 @@
     },
     "coverage": 73.68,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-08T14:03:29.000Z",
+      "message": "feat: Agregar validador de codigo de estado",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 31,
+      "deletions": 6,
+      "date": "2026-09-08"
+    },
+    "coverage": 76,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }
