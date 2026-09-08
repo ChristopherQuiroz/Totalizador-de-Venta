@@ -114,17 +114,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "412eccb607fabe6c89692330e7d0f5ab4840d6e2",
     "author": "Chris",
     "commit": {
       "date": "2026-09-08T14:03:29.000Z",
       "message": "feat: Agregar validador de codigo de estado",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/412eccb607fabe6c89692330e7d0f5ab4840d6e2"
     },
     "stats": {
       "total": 37,
       "additions": 31,
       "deletions": 6,
+      "date": "2026-09-08"
+    },
+    "coverage": 76,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-08T14:13:23.000Z",
+      "message": "style: Cambio de Código de Estado a un seleccionable combo-box",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 7,
+      "deletions": 1,
       "date": "2026-09-08"
     },
     "coverage": 76,

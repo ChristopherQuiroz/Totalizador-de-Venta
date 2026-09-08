@@ -244,9 +244,23 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "412eccb607fabe6c89692330e7d0f5ab4840d6e2",
     "commitName": "feat: Agregar validador de codigo de estado",
     "commitTimestamp": 1788876211299,
     "testId": 6
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1788876731931,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: Cambio de Código de Estado a un seleccionable combo-box",
+    "commitTimestamp": 1788876805429,
+    "testId": 7
   }
 ]
