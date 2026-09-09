@@ -18,6 +18,16 @@
       .toast.visible {
         display: block;
       }
+
+      .confirmacion {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 20px;
+      }
+
+      .confirmacion::backdrop {
+        background: rgb(0 0 0 / 40%);
+      }
     </style>
   </head>
   <body>
@@ -56,6 +66,12 @@
     </main>
 
     <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+
+    <dialog id="confirmacion-dialog" class="confirmacion">
+      <h2>Confirmar compra</h2>
+      <p>¿Desea confirmar la compra?</p>
+      <button id="cancelar-compra" type="button">Cancelar</button>
+    </dialog>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

@@ -3,8 +3,15 @@ import Totalizador from './totalizador.js';
 const totalizador = new Totalizador(document);
 const formulario = document.querySelector('.form');
 const toast = document.querySelector('#toast');
+const confirmacionDialog = document.querySelector('#confirmacion-dialog');
+const cancelarCompra = document.querySelector('#cancelar-compra');
 let temporizador;
 const codigosValidos = ['UT', 'NV', 'TX', 'AL', 'CA'];
+
+cancelarCompra.addEventListener('click', () => {
+	totalizador.limpiarFormulario();
+	confirmacionDialog.close();
+});
 
 function mostrarMensaje(tipoError) {
   window.clearTimeout(temporizador);
@@ -37,5 +44,8 @@ formulario.querySelector('button').addEventListener('click', (evento) => {
 	const codigo = document.querySelector('#statusCode').value.trim().toUpperCase();
     if (!codigosValidos.includes(codigo)) {
 		mostrarMensaje('Codigo_invalido');
+		return;
 	}
+
+	confirmacionDialog.showModal();
 });

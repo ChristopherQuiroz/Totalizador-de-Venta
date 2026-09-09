@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c83f76c14ebe798c5596c056d50013f239b53813",
     "author": "Chris",
     "commit": {
       "date": "2026-09-08T14:13:23.000Z",
       "message": "style: Cambio de Código de Estado a un seleccionable combo-box",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/c83f76c14ebe798c5596c056d50013f239b53813"
     },
     "stats": {
       "total": 8,
@@ -147,6 +147,25 @@
       "date": "2026-09-08"
     },
     "coverage": 76,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-09T14:07:33.000Z",
+      "message": "feat: Agregar la opcion de cancelar la compra, esta opcion limpia el formulario",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 35,
+      "deletions": 0,
+      "date": "2026-09-09"
+    },
+    "coverage": 65.52,
     "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"

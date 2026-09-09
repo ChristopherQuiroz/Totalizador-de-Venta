@@ -258,9 +258,15 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c83f76c14ebe798c5596c056d50013f239b53813",
     "commitName": "style: Cambio de Código de Estado a un seleccionable combo-box",
     "commitTimestamp": 1788876805429,
     "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar la opcion de cancelar la compra, esta opcion limpia el formulario",
+    "commitTimestamp": 1788962855909,
+    "testId": 8
   }
 ]

@@ -22,6 +22,15 @@ export default class Totalizador {
     return Totalizador.getCamposVacios(this.documento);
   }
 
+  limpiarFormulario() {
+    campos_formulario.forEach(({ id }) => {
+      const campo = this.documento?.getElementById(id);
+      if (campo) {
+        campo.value = '';
+      }
+    });
+  }
+
   static validarItems(documento = globalThis.document) {
     const campoCantidad = documento?.getElementById('itemAmount');
 
