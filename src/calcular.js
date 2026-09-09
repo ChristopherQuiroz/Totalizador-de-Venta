@@ -11,6 +11,7 @@ export default class PrecioTotal{
         this.documento = documento;
         this.cantidad = 0;
         this.precio = 0;
+        this.estado = " ";
     }
     
     calcularPrecioNeto(){
@@ -19,5 +20,22 @@ export default class PrecioTotal{
     
     static calcularPrecioNeto(cantidad, precio){
         return Number(cantidad) * Number(precio);
+    }
+
+    static calcularTotal(){
+        return PrecioTotal.calcularTotal();
+    }
+
+    calcularTotal(){
+        const precioNeto = PrecioTotal.calcularPrecioNeto(this.cantidad, this.precio);
+        const impuesto = PrecioTotal.calcularImpuesto(precioNeto, this.estado);
+
+        var total = precioNeto + impuesto;
+        
+        return total;
+    }
+
+    static calcularImpuesto(precioNeto, estado){
+        return precioNeto * 0.0665;
     }
 }

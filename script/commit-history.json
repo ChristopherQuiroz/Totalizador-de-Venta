@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "72376aa490e6e25c3dc78bbd1cc5a8921e9d3034",
     "author": "Chris",
     "commit": {
       "date": "2026-09-09T19:06:56.000Z",
       "message": "feat: Agregar si la cantidad es 12 y el precio es 365 el precio neto es 4380",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/72376aa490e6e25c3dc78bbd1cc5a8921e9d3034"
     },
     "stats": {
       "total": 26,
@@ -205,6 +205,25 @@
     },
     "coverage": 72.22,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-09T19:21:31.000Z",
+      "message": "feat: Agregar cobro de 6.65% de impuestos si el codigo es UT",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 35,
+      "deletions": 8,
+      "date": "2026-09-09"
+    },
+    "coverage": 74.42,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -380,9 +380,47 @@
     "testId": 10
   },
   {
-    "commitId": "HEAD",
+    "commitId": "72376aa490e6e25c3dc78bbd1cc5a8921e9d3034",
     "commitName": "feat: Agregar si la cantidad es 12 y el precio es 365 el precio neto es 4380",
     "commitTimestamp": 1788980818230,
     "testId": 10
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1788981341089,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1788981539427,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1788981585187,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1788981659014,
+    "success": true,
+    "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar cobro de 6.65% de impuestos si el codigo es UT",
+    "commitTimestamp": 1788981692906,
+    "testId": 11
   }
 ]
