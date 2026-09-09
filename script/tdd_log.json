@@ -546,9 +546,15 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c57b2259be369aeaf3624e5f2fc35f9725981123",
     "commitName": "feat: Agregar cobro de 8.25% de impuestos si el codigo es CA",
     "commitTimestamp": 1788982940984,
     "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: la web ahora muestra todo el calculo de precio neto, impuestos y el precio total",
+    "commitTimestamp": 1788983189492,
+    "testId": 16
   }
 ]

@@ -18,9 +18,19 @@ cancelarCompra.addEventListener('click', () => {
 confirmarCompra.addEventListener('click', () => {
 	const cantidad = document.querySelector('#itemAmount').value;
 	const precio = document.querySelector('#itemPrice').value;
-	const precioNeto = PrecioTotal.calcularPrecioNeto(cantidad, precio);
+	const estado = document.querySelector('#statusCode').value;
+	const precioTotal = new PrecioTotal();
+	precioTotal.cantidad = cantidad;
+	precioTotal.precio = precio;
+	precioTotal.estado = estado;
+
+	const precioNeto = precioTotal.calcularPrecioNeto();
+	const impuesto = PrecioTotal.calcularImpuesto(precioNeto, estado);
+	const total = precioTotal.calcularTotal();
 
 	document.querySelector('#netPrice').textContent = precioNeto;
+	document.querySelector('#taxes').textContent = impuesto;
+	document.querySelector('#total').textContent = total;
 	confirmacionDialog.close();
 });
 
