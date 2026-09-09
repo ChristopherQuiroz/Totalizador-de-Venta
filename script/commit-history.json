@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c4a0e40bb11cfab89102b6f18fb4a03387104ab2",
     "author": "Chris",
     "commit": {
       "date": "2026-09-09T18:48:34.000Z",
       "message": "feat: Agregar si la cantidad es 2 y el precio es 3 el precio neto es 6",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/c4a0e40bb11cfab89102b6f18fb4a03387104ab2"
     },
     "stats": {
       "total": 44,
@@ -186,6 +186,25 @@
     },
     "coverage": 66.67,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-09T19:06:56.000Z",
+      "message": "feat: Agregar si la cantidad es 12 y el precio es 365 el precio neto es 4380",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 22,
+      "deletions": 4,
+      "date": "2026-09-09"
+    },
+    "coverage": 72.22,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

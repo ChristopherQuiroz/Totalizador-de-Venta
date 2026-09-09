@@ -9,9 +9,15 @@ const codigosValidos = ["UT", "NV", "TX", "AL", "CA"];
 export default class PrecioTotal{
     constructor(documento = null) {
         this.documento = documento;
+        this.cantidad = 0;
+        this.precio = 0;
     }
     
-    static calcularPrecioNeto(){
-        return 6;
+    calcularPrecioNeto(){
+        return PrecioTotal.calcularPrecioNeto(this.cantidad, this.precio);
+    }
+    
+    static calcularPrecioNeto(cantidad, precio){
+        return Number(cantidad) * Number(precio);
     }
 }

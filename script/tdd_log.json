@@ -326,9 +326,63 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c4a0e40bb11cfab89102b6f18fb4a03387104ab2",
     "commitName": "feat: Agregar si la cantidad es 2 y el precio es 3 el precio neto es 6",
     "commitTimestamp": 1788979716011,
     "testId": 9
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1788979968719,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 2,
+    "numTotalTests": 6,
+    "timestamp": 1788980109785,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 2,
+    "numTotalTests": 6,
+    "timestamp": 1788980175760,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 2,
+    "numTotalTests": 6,
+    "timestamp": 1788980279658,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 2,
+    "numTotalTests": 6,
+    "timestamp": 1788980406970,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1788980692296,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar si la cantidad es 12 y el precio es 365 el precio neto es 4380",
+    "commitTimestamp": 1788980818230,
+    "testId": 10
   }
 ]
