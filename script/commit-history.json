@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a967cf68c37396ef108b8dd10cc9df354e574e44",
     "author": "Chris",
     "commit": {
       "date": "2026-09-09T14:07:33.000Z",
       "message": "feat: Agregar la opcion de cancelar la compra, esta opcion limpia el formulario",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/a967cf68c37396ef108b8dd10cc9df354e574e44"
     },
     "stats": {
       "total": 35,
@@ -167,6 +167,25 @@
     },
     "coverage": 65.52,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-09T18:48:34.000Z",
+      "message": "feat: Agregar si la cantidad es 2 y el precio es 3 el precio neto es 6",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 44,
+      "additions": 37,
+      "deletions": 7,
+      "date": "2026-09-09"
+    },
+    "coverage": 66.67,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }

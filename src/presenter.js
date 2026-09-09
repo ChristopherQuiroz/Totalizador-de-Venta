@@ -1,15 +1,26 @@
 import Totalizador from './totalizador.js';
+import PrecioTotal from './calcular.js';
 
 const totalizador = new Totalizador(document);
 const formulario = document.querySelector('.form');
 const toast = document.querySelector('#toast');
 const confirmacionDialog = document.querySelector('#confirmacion-dialog');
 const cancelarCompra = document.querySelector('#cancelar-compra');
+const confirmarCompra = document.querySelector('#confirmar-compra');
 let temporizador;
 const codigosValidos = ['UT', 'NV', 'TX', 'AL', 'CA'];
 
 cancelarCompra.addEventListener('click', () => {
 	totalizador.limpiarFormulario();
+	confirmacionDialog.close();
+});
+
+confirmarCompra.addEventListener('click', () => {
+	const cantidad = document.querySelector('#itemAmount').value;
+	const precio = document.querySelector('#itemPrice').value;
+	const precioNeto = PrecioTotal.calcularPrecioNeto(cantidad, precio);
+
+	document.querySelector('#netPrice').textContent = precioNeto;
 	confirmacionDialog.close();
 });
 

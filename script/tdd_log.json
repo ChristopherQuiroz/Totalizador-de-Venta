@@ -264,9 +264,71 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a967cf68c37396ef108b8dd10cc9df354e574e44",
     "commitName": "feat: Agregar la opcion de cancelar la compra, esta opcion limpia el formulario",
     "commitTimestamp": 1788962855909,
     "testId": 8
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1788978175909,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1788978300684,
+    "success": false,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1788978604809,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1788978964780,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1788978983818,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1788979187760,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1788979326797,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar si la cantidad es 2 y el precio es 3 el precio neto es 6",
+    "commitTimestamp": 1788979716011,
+    "testId": 9
   }
 ]
