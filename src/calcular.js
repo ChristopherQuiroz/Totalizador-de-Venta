@@ -4,7 +4,7 @@ const campos_formulario = [
   { id: 'statusCode', nombre: 'Código de Estado' },
 ];
 
-const codigosValidos = {"UT": 0.0665, "NV": 0.08, "TX":0.0625, "AL": 0.04};
+const codigosValidos = {"UT": 0.0665, "NV": 0.08, "TX":0.0625, "AL": 0.04, "CA": 0.0825};
 
 export default class PrecioTotal{
     constructor(documento = null) {

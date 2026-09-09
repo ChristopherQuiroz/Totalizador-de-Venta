@@ -524,9 +524,31 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4de5a0c0787d93aa4cd47b551e4d89fcece51d79",
     "commitName": "feat: Agregar cobro de 4.00% de impuestos si el codigo es AL",
     "commitTimestamp": 1788982741508,
     "testId": 14
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 1,
+    "numTotalTests": 11,
+    "timestamp": 1788982862156,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1788982878455,
+    "success": true,
+    "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar cobro de 8.25% de impuestos si el codigo es CA",
+    "commitTimestamp": 1788982940984,
+    "testId": 15
   }
 ]
