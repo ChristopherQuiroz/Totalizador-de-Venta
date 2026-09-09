@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d4e91be22b8a09188fc3f7f8bb21c3217f9690cf",
     "author": "Chris",
     "commit": {
       "date": "2026-09-09T19:36:35.000Z",
       "message": "feat: Agregar cobro de 6.25% de impuestos si el codigo es TX",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/d4e91be22b8a09188fc3f7f8bb21c3217f9690cf"
     },
     "stats": {
       "total": 20,
@@ -262,6 +262,25 @@
     },
     "coverage": 76.6,
     "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-09T19:38:59.000Z",
+      "message": "feat: Agregar cobro de 4.00% de impuestos si el codigo es AL",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-09-09"
+    },
+    "coverage": 76.6,
+    "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
   }
