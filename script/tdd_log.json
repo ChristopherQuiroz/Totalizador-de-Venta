@@ -472,9 +472,39 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d35e902b2e219c936e47cffe02a745c8c0186f33",
     "commitName": "feat: Agregar cobro de 8.00% de impuestos si el codigo es NV",
     "commitTimestamp": 1788982046200,
     "testId": 12
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 1,
+    "numTotalTests": 9,
+    "timestamp": 1788982299717,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 3,
+    "numTotalTests": 9,
+    "timestamp": 1788982433652,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1788982553657,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar cobro de 6.25% de impuestos si el codigo es TX",
+    "commitTimestamp": 1788982597858,
+    "testId": 13
   }
 ]

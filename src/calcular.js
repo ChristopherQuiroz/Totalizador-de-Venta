@@ -4,7 +4,7 @@ const campos_formulario = [
   { id: 'statusCode', nombre: 'Código de Estado' },
 ];
 
-const codigosValidos = ["UT", "NV", "TX", "AL", "CA"];
+const codigosValidos = {"UT": 0.0665, "NV": 0.08, "TX":0.0625};
 
 export default class PrecioTotal{
     constructor(documento = null) {
@@ -37,13 +37,14 @@ export default class PrecioTotal{
 
     static calcularImpuesto(precioNeto, estado){
         let porcentage = 0;
-        if(estado == "UT"){
-            porcentage = 0.0665;
-        } else {
-            porcentage = 0.08;
+        if (codigosValidos[estado] !== undefined) {
+            porcentage = codigosValidos[estado];
         }
+
         const cobroImpuesto = precioNeto * porcentage;
 
         return cobroImpuesto;
     }
+
+
 }
