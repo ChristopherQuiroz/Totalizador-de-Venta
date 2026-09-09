@@ -418,9 +418,63 @@
     "testId": 11
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5e4db6a7f41ffd39bb64b6a70f9718fe3f1e7fb9",
     "commitName": "feat: Agregar cobro de 6.65% de impuestos si el codigo es UT",
     "commitTimestamp": 1788981692906,
     "testId": 11
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1788981745262,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1788981782964,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 2,
+    "numTotalTests": 8,
+    "timestamp": 1788981890460,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 2,
+    "numTotalTests": 8,
+    "timestamp": 1788981931905,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 2,
+    "numTotalTests": 8,
+    "timestamp": 1788981954215,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1788981999864,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar cobro de 8.00% de impuestos si el codigo es NV",
+    "commitTimestamp": 1788982046200,
+    "testId": 12
   }
 ]

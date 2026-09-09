@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5e4db6a7f41ffd39bb64b6a70f9718fe3f1e7fb9",
     "author": "Chris",
     "commit": {
       "date": "2026-09-09T19:21:31.000Z",
       "message": "feat: Agregar cobro de 6.65% de impuestos si el codigo es UT",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/5e4db6a7f41ffd39bb64b6a70f9718fe3f1e7fb9"
     },
     "stats": {
       "total": 43,
@@ -224,6 +224,25 @@
     },
     "coverage": 74.42,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-09T19:27:24.000Z",
+      "message": "feat: Agregar cobro de 8.00% de impuestos si el codigo es NV",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 18,
+      "deletions": 1,
+      "date": "2026-09-09"
+    },
+    "coverage": 77.08,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

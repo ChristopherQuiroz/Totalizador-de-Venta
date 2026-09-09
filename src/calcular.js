@@ -36,6 +36,14 @@ export default class PrecioTotal{
     }
 
     static calcularImpuesto(precioNeto, estado){
-        return precioNeto * 0.0665;
+        let porcentage = 0;
+        if(estado == "UT"){
+            porcentage = 0.0665;
+        } else {
+            porcentage = 0.08;
+        }
+        const cobroImpuesto = precioNeto * porcentage;
+
+        return cobroImpuesto;
     }
 }

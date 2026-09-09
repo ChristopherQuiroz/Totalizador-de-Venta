@@ -25,4 +25,13 @@ describe('calculo de precio total', ()=>{
         
         expect(precioTotal.calcularTotal()).toBe(4671.27);
     })
+
+    it('Si el codigo de estado es NV aumentar un 8% al precio total', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 12;
+        precioTotal.precio = 365;
+        precioTotal.estado = "NV";
+        
+        expect(precioTotal.calcularTotal()).toBe(4730.40);
+    })
 })
