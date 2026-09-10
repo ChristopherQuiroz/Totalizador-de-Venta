@@ -494,12 +494,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "953de83c2fe6eb3fef2093720ab4eb15e27a48c0",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T04:20:47.000Z",
       "message": "feat: Agregar descuento del 1.5% por categoria Muebles de Escritorio",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/953de83c2fe6eb3fef2093720ab4eb15e27a48c0"
     },
     "stats": {
       "total": 12,
@@ -509,6 +509,25 @@
     },
     "coverage": 83.58,
     "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T04:23:31.000Z",
+      "message": "feat: Agregar impuesto del 3% por categoria Muebles",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 83.58,
+    "test_count": 22,
     "failed_tests": 0,
     "conclusion": "success"
   }

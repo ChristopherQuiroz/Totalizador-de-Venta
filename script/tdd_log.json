@@ -868,9 +868,31 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "953de83c2fe6eb3fef2093720ab4eb15e27a48c0",
     "commitName": "feat: Agregar descuento del 1.5% por categoria Muebles de Escritorio",
     "commitTimestamp": 1789014048668,
     "testId": 26
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 1,
+    "numTotalTests": 22,
+    "timestamp": 1789014132800,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1789014149101,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar impuesto del 3% por categoria Muebles",
+    "commitTimestamp": 1789014214129,
+    "testId": 27
   }
 ]

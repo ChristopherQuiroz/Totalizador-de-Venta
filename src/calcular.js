@@ -7,6 +7,7 @@ const campos_formulario = [
 const codigosValidos = {"UT": 0.0665, "NV": 0.08, "TX":0.0625, "AL": 0.04, "CA": 0.0825};
 const impuestosPorCategoria = {
     "Bebidas Alcohólicas": 0.07,
+    "Muebles": 0.03,
 };
 
 export default class PrecioTotal{

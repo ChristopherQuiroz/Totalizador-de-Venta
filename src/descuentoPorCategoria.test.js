@@ -40,4 +40,14 @@ describe('calculo de los descuentos por categoria', ()=>{
 
         expect(precioTotal.calcularTotal()).toBe(4371.14);
     })
+
+    it('Si la categoria es Muebles, no aplica descuento y suma 3% de impuesto', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 12;
+        precioTotal.precio = 365;
+        precioTotal.estado = "UT";
+        precioTotal.categoria = "Muebles";
+
+        expect(precioTotal.calcularTotal()).toBe(4562.54);
+    })
 })
