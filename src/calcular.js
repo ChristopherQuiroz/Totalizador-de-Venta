@@ -5,6 +5,9 @@ const campos_formulario = [
 ];
 
 const codigosValidos = {"UT": 0.0665, "NV": 0.08, "TX":0.0625, "AL": 0.04, "CA": 0.0825};
+const impuestosPorCategoria = {
+    "Bebidas Alcohólicas": 0.07,
+};
 
 export default class PrecioTotal{
     constructor(documento = null) {
@@ -29,7 +32,9 @@ export default class PrecioTotal{
 
     calcularTotal(){
         const precioNeto = PrecioTotal.calcularPrecioNeto(this.cantidad, this.precio);
-        const impuesto = PrecioTotal.calcularImpuesto(precioNeto, this.estado);
+        const impuestoEstado = PrecioTotal.calcularImpuesto(precioNeto, this.estado);
+        const impuestoCategoria = PrecioTotal.calcularImpuestoPorCategoria(precioNeto, this.categoria);
+        const impuesto = impuestoEstado + impuestoCategoria;
 
         let total = precioNeto + impuesto;
 
@@ -51,6 +56,11 @@ export default class PrecioTotal{
         return PrecioTotal.redondear(cobroImpuesto);
     }
 
+    static calcularImpuestoPorCategoria(precioNeto, categoria){
+        const porcentaje = impuestosPorCategoria[categoria] ?? 0;
+        return PrecioTotal.redondear(precioNeto * porcentaje);
+    }
+
     static calcularDescuentoEnBaseTotal(total){
         const descuentos= [
             { minimo: 30000, tasa: 0.15 },
@@ -65,12 +75,12 @@ export default class PrecioTotal{
     }
 
     static calcularDescuentoPorCategoria(total, categoria){
-        if(categoria == "Alimento" || categoria == "Alimentos"){
-            const descuento = total*0.02;
-            return total - descuento;
+        let descuento = 0;
+        if(categoria == "Alimentos"){
+            descuento = total*0.02;
         }
 
-        return total;
+        return total - descuento;
     }
 
     static redondear(valor){

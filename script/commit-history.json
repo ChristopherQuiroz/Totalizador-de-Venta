@@ -456,12 +456,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "232d830f921b765939ea693263c4650437daef07",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T03:36:01.000Z",
       "message": "feat: Agregar descuento del 2% por categoria de Alimento",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/232d830f921b765939ea693263c4650437daef07"
     },
     "stats": {
       "total": 26,
@@ -471,6 +471,25 @@
     },
     "coverage": 81.67,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T03:48:03.000Z",
+      "message": "feat: Agregar impuesto del 7% por categoria Bebidas Alcohólicas",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 31,
+      "deletions": 7,
+      "date": "2026-09-10"
+    },
+    "coverage": 83.08,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

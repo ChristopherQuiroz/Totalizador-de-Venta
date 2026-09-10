@@ -800,9 +800,55 @@
     "testId": 24
   },
   {
-    "commitId": "HEAD",
+    "commitId": "232d830f921b765939ea693263c4650437daef07",
     "commitName": "feat: Agregar descuento del 2% por categoria de Alimento",
     "commitTimestamp": 1789011363098,
     "testId": 24
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 2,
+    "numTotalTests": 20,
+    "timestamp": 1789011575640,
+    "success": false,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1789011632447,
+    "success": false,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1789011805253,
+    "success": false,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1789011938321,
+    "success": false,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1789011962316,
+    "success": true,
+    "testId": 25
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar impuesto del 7% por categoria Bebidas Alcohólicas",
+    "commitTimestamp": 1789012085047,
+    "testId": 25
   }
 ]

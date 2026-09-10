@@ -19,13 +19,17 @@ confirmarCompra.addEventListener('click', () => {
 	const cantidad = document.querySelector('#itemAmount').value;
 	const precio = document.querySelector('#itemPrice').value;
 	const estado = document.querySelector('#statusCode').value;
+	const categoria = document.querySelector('#category').value;
 	const precioTotal = new PrecioTotal();
 	precioTotal.cantidad = cantidad;
 	precioTotal.precio = precio;
 	precioTotal.estado = estado;
+	precioTotal.categoria = categoria;
 
 	const precioNeto = precioTotal.calcularPrecioNeto();
-	const impuesto = PrecioTotal.calcularImpuesto(precioNeto, estado);
+	const impuestoEstado = PrecioTotal.calcularImpuesto(precioNeto, estado);
+	const impuestoCategoria = PrecioTotal.calcularImpuestoPorCategoria(precioNeto, categoria);
+	const impuesto = impuestoEstado + impuestoCategoria;
 	const total = precioTotal.calcularTotal();
 
 	document.querySelector('#netPrice').textContent = precioNeto;

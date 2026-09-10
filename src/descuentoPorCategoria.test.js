@@ -16,8 +16,18 @@ describe('calculo de los descuentos por categoria', ()=>{
         precioTotal.cantidad = 12;
         precioTotal.precio = 365;
         precioTotal.estado = "UT";
-        precioTotal.categoria = "Alimento";
+        precioTotal.categoria = "Alimentos";
 
         expect(precioTotal.calcularTotal()).toBe(4348.96);
+    })
+
+    it('Si la categoria es Bebidas alcohólicas, no aplica descuento y suma 7% de impuesto', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 12;
+        precioTotal.precio = 365;
+        precioTotal.estado = "UT";
+        precioTotal.categoria = "Bebidas Alcohólicas";
+
+        expect(precioTotal.calcularTotal()).toBe(4728.98);
     })
 })
