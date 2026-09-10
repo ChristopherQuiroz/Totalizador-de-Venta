@@ -2,6 +2,7 @@ const campos_formulario = [
   { id: 'itemAmount', nombre: 'Cantidad de Item' },
   { id: 'itemPrice', nombre: 'Precio por Item' },
   { id: 'statusCode', nombre: 'Código de Estado' },
+  { id: 'category', nombre: 'Categoría'}
 ];
 
 const codigosValidos = ["UT", "NV", "TX", "AL", "CA"];

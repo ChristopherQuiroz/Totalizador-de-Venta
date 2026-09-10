@@ -724,9 +724,31 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5dba1e86d4660b7154f68a4911a7ce5e2ae6d893",
     "commitName": "feat: Agregar combo box para seleccionar categorias",
     "commitTimestamp": 1789009612046,
     "testId": 22
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1789010462481,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1789010480065,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento por categoria",
+    "commitTimestamp": 1789010528834,
+    "testId": 23
   }
 ]
