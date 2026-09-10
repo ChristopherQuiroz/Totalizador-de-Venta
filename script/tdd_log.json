@@ -718,9 +718,15 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "60eae733449f85372957a7fb784547d2c5a656fc",
     "commitName": "feat: Agregar descuento si el total es mayor a 30000",
     "commitTimestamp": 1789009191408,
     "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar combo box para seleccionar categorias",
+    "commitTimestamp": 1789009612046,
+    "testId": 22
   }
 ]

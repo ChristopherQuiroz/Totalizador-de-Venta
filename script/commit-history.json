@@ -399,17 +399,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "60eae733449f85372957a7fb784547d2c5a656fc",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T02:59:48.000Z",
       "message": "feat: Agregar descuento si el total es mayor a 30000",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/60eae733449f85372957a7fb784547d2c5a656fc"
     },
     "stats": {
       "total": 34,
       "additions": 21,
       "deletions": 13,
+      "date": "2026-09-10"
+    },
+    "coverage": 79.63,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T03:06:50.000Z",
+      "message": "feat: Agregar combo box para seleccionar categorias",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
       "date": "2026-09-10"
     },
     "coverage": 79.63,
