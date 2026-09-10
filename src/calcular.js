@@ -12,6 +12,7 @@ export default class PrecioTotal{
         this.cantidad = 0;
         this.precio = 0;
         this.estado = " ";
+        this.categoria = " ";
     }
     
     calcularPrecioNeto(){
@@ -32,9 +33,9 @@ export default class PrecioTotal{
 
         let total = precioNeto + impuesto;
 
-        if(total > 1000){
-            total = PrecioTotal.calcularDescuentoEnBaseTotal(total);
-        }
+        total = PrecioTotal.calcularDescuentoEnBaseTotal(total);
+        total = PrecioTotal.redondear(total);
+        total = PrecioTotal.calcularDescuentoPorCategoria(total, this.categoria);
 
         return PrecioTotal.redondear(total);
     }
@@ -61,6 +62,15 @@ export default class PrecioTotal{
 
         const descuento = descuentos.find(t => total > t.minimo);
         return descuento ? total * (1 - descuento.tasa) : total;
+    }
+
+    static calcularDescuentoPorCategoria(total, categoria){
+        if(categoria == "Alimento" || categoria == "Alimentos"){
+            const descuento = total*0.02;
+            return total - descuento;
+        }
+
+        return total;
     }
 
     static redondear(valor){

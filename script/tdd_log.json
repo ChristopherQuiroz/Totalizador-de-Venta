@@ -746,9 +746,63 @@
     "testId": 23
   },
   {
-    "commitId": "HEAD",
+    "commitId": "59ebe00070a77a124148d42c4388e87d5d5f41bc",
     "commitName": "feat: Agregar descuento por categoria",
     "commitTimestamp": 1789010528834,
     "testId": 23
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1789010809560,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1789010934687,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 12,
+    "numTotalTests": 19,
+    "timestamp": 1789010991470,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 12,
+    "numTotalTests": 19,
+    "timestamp": 1789011052686,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1789011182070,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1789011315223,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento del 2% por categoria de Alimento",
+    "commitTimestamp": 1789011363098,
+    "testId": 24
   }
 ]
