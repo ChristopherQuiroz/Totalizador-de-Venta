@@ -36,5 +36,17 @@ describe('calculo de descuentos por tipo de cliente', ()=>{
 
 		expect(precioTotal.calcularTotal()).toBe(4393.33);
 	})
+
+	it('Si el cliente es Especial, aplica un descuento adicional del 1.5%', ()=>{
+		const precioTotal = new PrecioTotal();
+		precioTotal.cantidad = 12;
+		precioTotal.precio = 365;
+		precioTotal.estado = "UT";
+		precioTotal.categoria = "Varios";
+		precioTotal.peso = 0;
+		precioTotal.tipoCliente = "Especial";
+
+		expect(precioTotal.calcularTotal()).toBe(4371.14);
+	})
     
 })

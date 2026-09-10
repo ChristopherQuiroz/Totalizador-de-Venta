@@ -120,7 +120,8 @@ export default class PrecioTotal{
         const descuentos = {
             "Normal": 0,
             "Recurrente": 0.005,
-            "Antiguo Recurrente": 0.01,       
+            "Antiguo Recurrente": 0.01,
+            "Especial": 0.015,     
         };
         const porcentaje = descuentos[tipoCliente] ?? 0;
         const descuento = total * porcentaje;

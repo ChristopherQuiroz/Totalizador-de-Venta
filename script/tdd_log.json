@@ -1258,9 +1258,31 @@
     "testId": 43
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7b80e7dc352f148816b78f4315c8b8ec34cfd300",
     "commitName": "feat: Agregar descuento del 1% cuando el cliente es Antiguo Recurrente",
     "commitTimestamp": 1789021417638,
     "testId": 43
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 1,
+    "numTotalTests": 37,
+    "timestamp": 1789021457168,
+    "success": false,
+    "testId": 44
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 0,
+    "numTotalTests": 37,
+    "timestamp": 1789021470327,
+    "success": true,
+    "testId": 44
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento del 1.5% si cliente es Especial",
+    "commitTimestamp": 1789021494372,
+    "testId": 44
   }
 ]

@@ -817,12 +817,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7b80e7dc352f148816b78f4315c8b8ec34cfd300",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T06:23:36.000Z",
       "message": "feat: Agregar descuento del 1% cuando el cliente es Antiguo Recurrente",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/7b80e7dc352f148816b78f4315c8b8ec34cfd300"
     },
     "stats": {
       "total": 20,
@@ -832,6 +832,25 @@
     },
     "coverage": 87.1,
     "test_count": 36,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T06:24:53.000Z",
+      "message": "feat: Agregar descuento del 1.5% si cliente es Especial",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 87.1,
+    "test_count": 37,
     "failed_tests": 0,
     "conclusion": "success"
   }
