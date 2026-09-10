@@ -304,12 +304,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a13b9728c355a9f7ae43f75b501ef0ba8bcb17bb",
     "author": "Chris",
     "commit": {
       "date": "2026-09-09T19:46:27.000Z",
       "message": "style: la web ahora muestra todo el calculo de precio neto, impuestos y el precio total",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/a13b9728c355a9f7ae43f75b501ef0ba8bcb17bb"
     },
     "stats": {
       "total": 16,
@@ -319,6 +319,25 @@
     },
     "coverage": 76.6,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T02:18:10.000Z",
+      "message": "feat: Agregar descuento si el total es mayor a 1000",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 29,
+      "deletions": 9,
+      "date": "2026-09-10"
+    },
+    "coverage": 78.85,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }

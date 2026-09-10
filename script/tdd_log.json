@@ -552,9 +552,55 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a13b9728c355a9f7ae43f75b501ef0ba8bcb17bb",
     "commitName": "style: la web ahora muestra todo el calculo de precio neto, impuestos y el precio total",
     "commitTimestamp": 1788983189492,
     "testId": 16
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1789005874456,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 6,
+    "numTotalTests": 12,
+    "timestamp": 1789005964427,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 6,
+    "numTotalTests": 12,
+    "timestamp": 1789006445333,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1789006581607,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1789006614550,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento si el total es mayor a 1000",
+    "commitTimestamp": 1789006693224,
+    "testId": 17
   }
 ]

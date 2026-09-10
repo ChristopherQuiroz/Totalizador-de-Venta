@@ -30,9 +30,13 @@ export default class PrecioTotal{
         const precioNeto = PrecioTotal.calcularPrecioNeto(this.cantidad, this.precio);
         const impuesto = PrecioTotal.calcularImpuesto(precioNeto, this.estado);
 
-        var total = precioNeto + impuesto;
-        
-        return total;
+        let total = precioNeto + impuesto;
+
+        if(total > 1000){
+            total = PrecioTotal.calcularDescuentoEnBaseTotal(total);
+        }
+
+        return PrecioTotal.redondear(total);
     }
 
     static calcularImpuesto(precioNeto, estado){
@@ -43,8 +47,15 @@ export default class PrecioTotal{
 
         const cobroImpuesto = precioNeto * porcentage;
 
-        return cobroImpuesto;
+        return PrecioTotal.redondear(cobroImpuesto);
     }
 
+    static calcularDescuentoEnBaseTotal(total){
+        const descuento = total*0.03;
+        return total - descuento;
+    }
 
+    static redondear(valor){
+        return Number(valor.toFixed(2));
+    }
 }
