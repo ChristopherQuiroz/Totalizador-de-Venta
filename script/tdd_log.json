@@ -1014,9 +1014,31 @@
     "testId": 33
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bf457fb68e4cf08eccb4c811a5d714cde3749767",
     "commitName": "feat:Agregar mostrar y calcular un extra de 0$ si el peso volumétrico esta entre 0-10",
     "commitTimestamp": 1789019261997,
     "testId": 33
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1789019405348,
+    "success": false,
+    "testId": 34
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1789019607292,
+    "success": true,
+    "testId": 34
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar costo extra de 3.5$ si el peso volumetrico esta entre 11-20",
+    "commitTimestamp": 1789019671019,
+    "testId": 34
   }
 ]
