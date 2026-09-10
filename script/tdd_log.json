@@ -964,9 +964,15 @@
     "testId": 30
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e7e0aa510db92317de290ab1685b7bf52e205d5f",
     "commitName": "style: Solamente se muestran los datos que si afectan al Precio total",
     "commitTimestamp": 1789015523718,
     "testId": 30
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Corregido error que  mostraba resultados sin tener que confirmar la compra",
+    "commitTimestamp": 1789015835027,
+    "testId": 31
   }
 ]

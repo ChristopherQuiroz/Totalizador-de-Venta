@@ -65,6 +65,7 @@ cancelarCompra.addEventListener('click', () => {
 });
 
 confirmarCompra.addEventListener('click', () => {
+	mostrarResultados();
 	cerrarConfirmacion();
 });
 
@@ -102,6 +103,5 @@ botonTotalizar.addEventListener('click', (evento) => {
 		return;
 	}
 
-	mostrarResultados();
 	confirmacionDialog.showModal();
 });

@@ -570,17 +570,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e7e0aa510db92317de290ab1685b7bf52e205d5f",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T04:45:22.000Z",
       "message": "style: Solamente se muestran los datos que si afectan al Precio total",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/e7e0aa510db92317de290ab1685b7bf52e205d5f"
     },
     "stats": {
       "total": 85,
       "additions": 65,
       "deletions": 20,
+      "date": "2026-09-10"
+    },
+    "coverage": 83.08,
+    "test_count": 24,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T04:50:32.000Z",
+      "message": "fix: Corregido error que  mostraba resultados sin tener que confirmar la compra",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
       "date": "2026-09-10"
     },
     "coverage": 83.08,
