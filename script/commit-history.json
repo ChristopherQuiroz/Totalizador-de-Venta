@@ -589,12 +589,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "12f3352ede27f57bd937edc2e1d54539d6dcf8c0",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T04:50:32.000Z",
       "message": "fix: Corregido error que  mostraba resultados sin tener que confirmar la compra",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/12f3352ede27f57bd937edc2e1d54539d6dcf8c0"
     },
     "stats": {
       "total": 2,
@@ -604,6 +604,25 @@
     },
     "coverage": 83.08,
     "test_count": 24,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T05:27:52.000Z",
+      "message": "feat: Agregar campo para el peso volumetrico",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 29,
+      "additions": 28,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 84.06,
+    "test_count": 25,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -970,9 +970,31 @@
     "testId": 30
   },
   {
-    "commitId": "HEAD",
+    "commitId": "12f3352ede27f57bd937edc2e1d54539d6dcf8c0",
     "commitName": "fix: Corregido error que  mostraba resultados sin tener que confirmar la compra",
     "commitTimestamp": 1789015835027,
     "testId": 31
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1789016407154,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1789017525352,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar campo para el peso volumetrico",
+    "commitTimestamp": 1789018075754,
+    "testId": 32
   }
 ]

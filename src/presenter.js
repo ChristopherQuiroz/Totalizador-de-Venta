@@ -21,6 +21,7 @@ function obtenerPrecioTotal() {
 	precioTotal.precio = document.querySelector('#itemPrice').value;
 	precioTotal.estado = document.querySelector('#statusCode').value;
 	precioTotal.categoria = document.querySelector('#category').value;
+	precioTotal.peso = document.querySelector('#volumetricWeight').value;
 	return precioTotal;
 }
 
@@ -94,6 +95,11 @@ botonTotalizar.addEventListener('click', (evento) => {
 
 	if (!Totalizador.validarPrecio()) {
 		mostrarMensaje('Precio_invalido');
+		return;
+	}
+
+	if (!Totalizador.validarPesoVolumetrico()) {
+		mostrarMensaje('Peso_volumetrico_invalido');
 		return;
 	}
 

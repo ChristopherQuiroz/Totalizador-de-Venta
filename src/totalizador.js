@@ -2,7 +2,8 @@ const campos_formulario = [
   { id: 'itemAmount', nombre: 'Cantidad de Item' },
   { id: 'itemPrice', nombre: 'Precio por Item' },
   { id: 'statusCode', nombre: 'Código de Estado' },
-  { id: 'category', nombre: 'Categoría'}
+  { id: 'category', nombre: 'Categoría'},
+  { id: 'volumetricWeight', nombre: 'Peso volumétrico del pedido'}
 ];
 
 const codigosValidos = ["UT", "NV", "TX", "AL", "CA"];
@@ -50,6 +51,13 @@ export default class Totalizador {
     return true;
   }
 
+  static validarPesoVolumetrico(documento = globalThis.document) {
+    const campoPeso = documento?.getElementById('volumetricWeight');
+    const peso = Number(campoPeso?.value);
+
+    return Number.isFinite(peso) && peso > 0;
+  }
+
   static validarCodigo(documento = globalThis.document){
     const campoCodigo = documento?.getElementById('statusCode');
 
@@ -67,6 +75,8 @@ export default class Totalizador {
             return 'La cantidad de items debe ser mayor a cero.';
         case 'Precio_invalido':
             return 'El precio por item debe de ser mayor a cero.';
+        case 'Peso_volumetrico_invalido':
+          return 'El peso volumétrico debe ser mayor a cero.';
         case 'Codigo_invalido':
             return 'El código de estado es inválido.';
     }

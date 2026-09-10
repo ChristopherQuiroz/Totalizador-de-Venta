@@ -20,6 +20,15 @@ describe('Validar el Formulario', ()=>{
         }
     })
 
+    it('Mostrar error si el peso volumetrico no es mayor a cero', ()=>{
+        const documento = {
+            getElementById: () => ({ value: '0' })
+        };
+
+        expect(Totalizador.validarPesoVolumetrico(documento)).toBe(false);
+        expect(Totalizador.Message("Peso_volumetrico_invalido")).toBe("El peso volumétrico debe ser mayor a cero.");
+    })
+
     it('Mostrar error si el codigo de estado es invalido', ()=>{
         if(!Totalizador.validarCodigo()){
             expect(Totalizador.Message("Codigo_invalido")).toBe("El código de estado es inválido.")
