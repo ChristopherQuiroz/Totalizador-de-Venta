@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d5a565c7f9722cb53fa634579cf2a80817748905",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T06:27:23.000Z",
       "message": "feat: Agregar descuento especial de 100$ si el cliente es Recurrente, precio neto es mayor a 300 y categoria de producto es Alimentos",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/d5a565c7f9722cb53fa634579cf2a80817748905"
     },
     "stats": {
       "total": 37,
@@ -870,6 +870,25 @@
     },
     "coverage": 87.63,
     "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T06:29:07.000Z",
+      "message": "feat: Agregar descuento de 200$ si el cliente es Especial, precio neto mayor a 7000 y la categoria de producto es Electronicos",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 87.88,
+    "test_count": 39,
     "failed_tests": 0,
     "conclusion": "success"
   }

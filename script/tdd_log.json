@@ -1302,9 +1302,31 @@
     "testId": 45
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d5a565c7f9722cb53fa634579cf2a80817748905",
     "commitName": "feat: Agregar descuento especial de 100$ si el cliente es Recurrente, precio neto es mayor a 300 y categoria de producto es Alimentos",
     "commitTimestamp": 1789021644058,
     "testId": 45
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 1,
+    "numTotalTests": 39,
+    "timestamp": 1789021691640,
+    "success": false,
+    "testId": 46
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1789021708913,
+    "success": true,
+    "testId": 46
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento de 200$ si el cliente es Especial, precio neto mayor a 7000 y la categoria de producto es Electronicos",
+    "commitTimestamp": 1789021748513,
+    "testId": 46
   }
 ]

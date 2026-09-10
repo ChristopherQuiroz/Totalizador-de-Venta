@@ -60,5 +60,17 @@ describe('calculo de descuentos por tipo de cliente', ()=>{
 
 		expect(precioTotal.calcularTotal()).toBe(4227.22);
 	})
+
+	it('Si Especial compra Electronicos por mas de 7000, aplica 200 de descuento', ()=>{
+		const precioTotal = new PrecioTotal();
+		precioTotal.cantidad = 20;
+		precioTotal.precio = 400;
+		precioTotal.estado = "UT";
+		precioTotal.categoria = "Electrónicos";
+		precioTotal.peso = 0;
+		precioTotal.tipoCliente = "Especial";
+
+		expect(precioTotal.calcularTotal()).toBe(7827.79);
+	})
     
 })

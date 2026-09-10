@@ -135,6 +135,9 @@ export default class PrecioTotal{
             return PrecioTotal.redondear(total - 100);
         }
 
+        if (precioNeto > 7000 && categoria === "Electrónicos" && tipoCliente === "Especial") {
+            return PrecioTotal.redondear(total - 200);
+        }
         return total;
     }
 
