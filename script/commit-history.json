@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7670af858c0a14f0e5fe17200164ccf0685c1c95",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T06:01:43.000Z",
       "message": "feat: Agregar costo extra de 5$ si el peso volumetrico esta entre 21-40",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/7670af858c0a14f0e5fe17200164ccf0685c1c95"
     },
     "stats": {
       "total": 13,
@@ -680,6 +680,25 @@
     },
     "coverage": 84.81,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T06:04:07.000Z",
+      "message": "feat: Agregar costo extra de 6$ si el peso volumetrico esta entre 41-80",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 85.19,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }
