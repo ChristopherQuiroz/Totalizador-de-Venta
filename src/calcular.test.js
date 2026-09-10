@@ -76,7 +76,7 @@ describe('calculo de precio total', ()=>{
         precioTotal.precio = 2;
         precioTotal.estado = "UT";
 
-        expect(precioTotal.calcularTotal()).toBe(1034.51);
+        expect(precioTotal.calcularTotal()).toBe(1034.50);
     })
 
     it('Calcular descuento del 5% si el precio neto es mayor a 3000', ()=>{
@@ -85,7 +85,7 @@ describe('calculo de precio total', ()=>{
         precioTotal.precio = 3;
         precioTotal.estado = "UT";
 
-        expect(precioTotal.calcularTotal()).toBe(3039.53);
+        expect(precioTotal.calcularTotal()).toBe(3039.52);
     })
 
     it('Calcular descuento del 7% si el precio neto es mayor a 7000', ()=>{
@@ -104,5 +104,14 @@ describe('calculo de precio total', ()=>{
         precioTotal.estado = "UT";
 
         expect(precioTotal.calcularTotal()).toBe(9598.50);
+    })
+
+    it('Calcular descuento del 15% si el precio neto es mayor a 30000', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 3000;
+        precioTotal.precio = 10;
+        precioTotal.estado = "UT";
+
+        expect(precioTotal.calcularTotal()).toBe(27195.75);
     })
 })

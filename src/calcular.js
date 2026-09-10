@@ -51,17 +51,16 @@ export default class PrecioTotal{
     }
 
     static calcularDescuentoEnBaseTotal(total){
-        let descuento = 0;
-        if(total > 10000){
-            descuento = total*0.1;
-        } else if(total > 7000){
-            descuento = total*0.07;
-        } else if(total > 3000){
-            descuento = total*0.05;
-        } else if(total > 1000){
-            descuento = total*0.03;
-        }
-        return total - descuento;
+        const descuentos= [
+            { minimo: 30000, tasa: 0.15 },
+            { minimo: 10000, tasa: 0.10 },
+            { minimo:  7000, tasa: 0.07 },
+            { minimo:  3000, tasa: 0.05 },
+            { minimo:  1000, tasa: 0.03 },
+        ];
+
+        const descuento = descuentos.find(t => total > t.minimo);
+        return descuento ? total * (1 - descuento.tasa) : total;
     }
 
     static redondear(valor){
