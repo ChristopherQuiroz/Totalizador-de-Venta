@@ -52,7 +52,9 @@ export default class PrecioTotal{
 
     static calcularDescuentoEnBaseTotal(total){
         let descuento = 0;
-        if(total > 3000){
+        if(total > 7000){
+            descuento = total*0.07;
+        } else if(total > 3000){
             descuento = total*0.05;
         } else if(total > 1000){
             descuento = total*0.03;
