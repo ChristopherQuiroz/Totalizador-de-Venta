@@ -24,5 +24,17 @@ describe('calculo de descuentos por tipo de cliente', ()=>{
 
 		expect(precioTotal.calcularTotal()).toBe(4415.52);
 	})
+
+	it('Si el cliente es Antiguo Recurrente, aplica un descuento adicional del 1%', ()=>{
+		const precioTotal = new PrecioTotal();
+		precioTotal.cantidad = 12;
+		precioTotal.precio = 365;
+		precioTotal.estado = "UT";
+		precioTotal.categoria = "Varios";
+		precioTotal.peso = 0;
+		precioTotal.tipoCliente = "Antiguo Recurrente";
+
+		expect(precioTotal.calcularTotal()).toBe(4393.33);
+	})
     
 })

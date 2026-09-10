@@ -119,7 +119,8 @@ export default class PrecioTotal{
     static calcularDescuentoPorCliente(total, tipoCliente){
         const descuentos = {
             "Normal": 0,
-            "Recurrente": 0.005,        
+            "Recurrente": 0.005,
+            "Antiguo Recurrente": 0.01,       
         };
         const porcentaje = descuentos[tipoCliente] ?? 0;
         const descuento = total * porcentaje;
