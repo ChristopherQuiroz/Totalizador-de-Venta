@@ -50,4 +50,14 @@ describe('calculo de los descuentos por categoria', ()=>{
 
         expect(precioTotal.calcularTotal()).toBe(4562.54);
     })
+
+    it('Si la categoria es Electrónicos, aplica un descuento del 1% y suma 4% de impuesto', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 12;
+        precioTotal.precio = 365;
+        precioTotal.estado = "UT";
+        precioTotal.categoria = "Electrónicos";
+
+        expect(precioTotal.calcularTotal()).toBe(4558.11);
+    })
 })

@@ -5,10 +5,18 @@ const campos_formulario = [
 ];
 
 const codigosValidos = {"UT": 0.0665, "NV": 0.08, "TX":0.0625, "AL": 0.04, "CA": 0.0825};
+
 const impuestosPorCategoria = {
     "Bebidas Alcohólicas": 0.07,
     "Muebles": 0.03,
+    "Electrónicos": 0.04,
 };
+
+const descuentosPorCategoria = {
+    "Alimentos": 0.02,
+    "Material de Escritorio": 0.015,
+    "Electrónicos": 0.01
+}
 
 export default class PrecioTotal{
     constructor(documento = null) {
@@ -76,14 +84,9 @@ export default class PrecioTotal{
     }
 
     static calcularDescuentoPorCategoria(total, categoria){
-        let descuento = 0;
-        if(categoria == "Alimentos"){
-            descuento = total*0.02;
-        } else if(categoria == "Material de Escritorio"){
-            descuento = total*0.015;
-        }
-
-        return total - descuento;
+        const porcentaje = descuentosPorCategoria[categoria] ?? 0;
+        const descuento = total * porcentaje;
+        return PrecioTotal.redondear(total - descuento);
     }
 
     static redondear(valor){

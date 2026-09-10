@@ -890,9 +890,47 @@
     "testId": 27
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9afd07b989cce554a4a0ab164575452e038413e4",
     "commitName": "feat: Agregar impuesto del 3% por categoria Muebles",
     "commitTimestamp": 1789014214129,
     "testId": 27
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 16,
+    "numTotalTests": 23,
+    "timestamp": 1789014570298,
+    "success": false,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 3,
+    "numTotalTests": 23,
+    "timestamp": 1789014595863,
+    "success": false,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 16,
+    "numTotalTests": 23,
+    "timestamp": 1789014688907,
+    "success": false,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1789014790948,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar un descuento del 1% e impuestos del 4% por categoria Electrónicos",
+    "commitTimestamp": 1789014839822,
+    "testId": 28
   }
 ]
