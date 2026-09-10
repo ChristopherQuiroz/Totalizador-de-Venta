@@ -66,8 +66,22 @@
       <div class="summarize">
         <label>Precio neto ($): </label>
         <div id="netPrice"></div>
-        <label>Impuestos ($): </label>
-        <div id="taxes"></div>
+        <div id="stateTaxes-row" hidden>
+          <label>Impuesto ($): </label>
+          <div id="stateTaxes"></div>
+        </div>
+        <div id="categoryTaxes-row" hidden>
+          <label>Impuesto adicional por categoría ($): </label>
+          <div id="categoryTaxes"></div>
+        </div>
+        <div id="amountDiscount-row" hidden>
+          <label>Descuento por monto ($): </label>
+          <div id="amountDiscount"></div>
+        </div>
+        <div id="categoryDiscount-row" hidden>
+          <label>Descuento por categoría ($): </label>
+          <div id="categoryDiscount"></div>
+        </div>
         <label>Precio total ($): </label>
         <div id="total"></div>
       </div>

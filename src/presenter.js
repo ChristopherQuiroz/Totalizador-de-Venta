@@ -7,35 +7,65 @@ const toast = document.querySelector('#toast');
 const confirmacionDialog = document.querySelector('#confirmacion-dialog');
 const cancelarCompra = document.querySelector('#cancelar-compra');
 const confirmarCompra = document.querySelector('#confirmar-compra');
+const botonTotalizar = formulario.querySelector('button');
 let temporizador;
 const codigosValidos = ['UT', 'NV', 'TX', 'AL', 'CA'];
 
+function cerrarConfirmacion() {
+	confirmacionDialog.close();
+}
+
+function obtenerPrecioTotal() {
+	const precioTotal = new PrecioTotal();
+	precioTotal.cantidad = document.querySelector('#itemAmount').value;
+	precioTotal.precio = document.querySelector('#itemPrice').value;
+	precioTotal.estado = document.querySelector('#statusCode').value;
+	precioTotal.categoria = document.querySelector('#category').value;
+	return precioTotal;
+}
+
+function mostrarConcepto(id, valor) {
+	const fila = document.querySelector(`#${id}-row`);
+	const visible = valor !== 0;
+	fila.hidden = !visible;
+	document.querySelector(`#${id}`).textContent = visible ? valor : '';
+}
+
+function limpiarResultados() {
+	document.querySelector('#netPrice').textContent = '';
+	document.querySelector('#total').textContent = '';
+	['stateTaxes', 'categoryTaxes', 'amountDiscount', 'categoryDiscount'].forEach((id) => {
+		mostrarConcepto(id, 0);
+	});
+}
+
+function mostrarResultados() {
+	const precioTotal = obtenerPrecioTotal();
+	const precioNeto = precioTotal.calcularPrecioNeto();
+	const impuestoEstado = PrecioTotal.calcularImpuesto(precioNeto, precioTotal.estado);
+	const impuestoCategoria = PrecioTotal.calcularImpuestoPorCategoria(precioNeto, precioTotal.categoria);
+	const subtotal = precioNeto + impuestoEstado + impuestoCategoria;
+	const totalConDescuentoMonto = PrecioTotal.calcularDescuentoEnBaseTotal(subtotal);
+	const descuentoMonto = PrecioTotal.redondear(subtotal - totalConDescuentoMonto);
+	const total = precioTotal.calcularTotal();
+	const descuentoCategoria = PrecioTotal.redondear(totalConDescuentoMonto - total);
+
+	document.querySelector('#netPrice').textContent = precioNeto;
+	mostrarConcepto('stateTaxes', impuestoEstado);
+	mostrarConcepto('categoryTaxes', impuestoCategoria);
+	mostrarConcepto('amountDiscount', descuentoMonto);
+	mostrarConcepto('categoryDiscount', descuentoCategoria);
+	document.querySelector('#total').textContent = total;
+}
+
 cancelarCompra.addEventListener('click', () => {
 	totalizador.limpiarFormulario();
-	confirmacionDialog.close();
+	limpiarResultados();
+	cerrarConfirmacion();
 });
 
 confirmarCompra.addEventListener('click', () => {
-	const cantidad = document.querySelector('#itemAmount').value;
-	const precio = document.querySelector('#itemPrice').value;
-	const estado = document.querySelector('#statusCode').value;
-	const categoria = document.querySelector('#category').value;
-	const precioTotal = new PrecioTotal();
-	precioTotal.cantidad = cantidad;
-	precioTotal.precio = precio;
-	precioTotal.estado = estado;
-	precioTotal.categoria = categoria;
-
-	const precioNeto = precioTotal.calcularPrecioNeto();
-	const impuestoEstado = PrecioTotal.calcularImpuesto(precioNeto, estado);
-	const impuestoCategoria = PrecioTotal.calcularImpuestoPorCategoria(precioNeto, categoria);
-	const impuesto = impuestoEstado + impuestoCategoria;
-	const total = precioTotal.calcularTotal();
-
-	document.querySelector('#netPrice').textContent = precioNeto;
-	document.querySelector('#taxes').textContent = impuesto;
-	document.querySelector('#total').textContent = total;
-	confirmacionDialog.close();
+	cerrarConfirmacion();
 });
 
 function mostrarMensaje(tipoError) {
@@ -48,7 +78,7 @@ function mostrarMensaje(tipoError) {
   }, 3000);
 }
 
-formulario.querySelector('button').addEventListener('click', (evento) => {
+botonTotalizar.addEventListener('click', (evento) => {
 	evento.preventDefault();
 
 	if (totalizador.getCamposVacios() > 0) {
@@ -72,5 +102,6 @@ formulario.querySelector('button').addEventListener('click', (evento) => {
 		return;
 	}
 
+	mostrarResultados();
 	confirmacionDialog.showModal();
 });
