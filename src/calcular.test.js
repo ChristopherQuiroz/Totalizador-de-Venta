@@ -17,49 +17,57 @@ describe('calculo de precio total', ()=>{
         expect(precioTotal.calcularPrecioNeto()).toBe(4380);
     })
 
-    it('Si el codigo de estado es UT aumentar un 6.65% al precio total', ()=>{
+    it('Si tengo 12 items y el precio es de 365 -> precio neto: 4380', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 12;
+        precioTotal.precio = 365;
+
+        expect(precioTotal.calcularPrecioNeto()).toBe(4380);
+    })
+
+    it('UT: 12 items a 365, impuesto 6.65%, descuento 5% por superar 3000', ()=>{
         const precioTotal = new PrecioTotal();
         precioTotal.cantidad = 12;
         precioTotal.precio = 365;
         precioTotal.estado = "UT";
         
-        expect(precioTotal.calcularTotal()).toBe(4531.13);
+        expect(precioTotal.calcularTotal()).toBe(4437.71);
     })
 
-    it('Si el codigo de estado es NV aumentar un 8% al precio total', ()=>{
+    it('NV: 12 items a 365, impuesto 8%, descuento 5% por superar 3000', ()=>{
         const precioTotal = new PrecioTotal();
         precioTotal.cantidad = 12;
         precioTotal.precio = 365;
         precioTotal.estado = "NV";
         
-        expect(precioTotal.calcularTotal()).toBe(4588.49);
+        expect(precioTotal.calcularTotal()).toBe(4493.88);
     })
 
-    it('Si el codigo de estado es TX aumentar un 6.25% al precio total', ()=>{
+    it('TX: 12 items a 365, impuesto 6.25%, descuento 5% por superar 3000', ()=>{
         const precioTotal = new PrecioTotal();
         precioTotal.cantidad = 12;
         precioTotal.precio = 365;
         precioTotal.estado = "TX";
         
-        expect(precioTotal.calcularTotal()).toBe(4514.14);
+        expect(precioTotal.calcularTotal()).toBe(4421.06);
     })
 
-    it('Si el codigo de estado es AL aumentar un 4.00% al precio total', ()=>{
+    it('AL: 12 items a 365, impuesto 4%, descuento 5% por superar 3000', ()=>{
         const precioTotal = new PrecioTotal();
         precioTotal.cantidad = 12;
         precioTotal.precio = 365;
         precioTotal.estado = "AL";
         
-        expect(precioTotal.calcularTotal()).toBe(4418.54);
+        expect(precioTotal.calcularTotal()).toBe(4327.44);
     })
 
-    it('Si el codigo de estado es CA aumentar un 8.25% al precio total', ()=>{
+    it('CA: 12 items a 365, impuesto 8.25%, descuento 5% por superar 3000', ()=>{
         const precioTotal = new PrecioTotal();
         precioTotal.cantidad = 12;
         precioTotal.precio = 365;
         precioTotal.estado = "CA";
         
-        expect(precioTotal.calcularTotal()).toBe(4599.11);
+        expect(precioTotal.calcularTotal()).toBe(4504.28);
     })
 
     it('Calcular descuento si el precio neto es mayor a 1000', ()=>{
@@ -69,5 +77,14 @@ describe('calculo de precio total', ()=>{
         precioTotal.estado = "UT";
 
         expect(precioTotal.calcularTotal()).toBe(1034.51);
+    })
+
+    it('Calcular descuento del 5% si el precio neto es mayor a 3000', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 1000;
+        precioTotal.precio = 3;
+        precioTotal.estado = "UT";
+
+        expect(precioTotal.calcularTotal()).toBe(3039.53);
     })
 })
