@@ -928,9 +928,31 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "abb8f00bbf0e87cebcc1b45c5d87575db5aa31c3",
     "commitName": "feat: Agregar un descuento del 1% e impuestos del 4% por categoria Electrónicos",
     "commitTimestamp": 1789014839822,
     "testId": 28
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1789014887137,
+    "success": false,
+    "testId": 29
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1789014909179,
+    "success": true,
+    "testId": 29
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar impuesto del 2% por categoria Vestimenta",
+    "commitTimestamp": 1789014940083,
+    "testId": 29
   }
 ]

@@ -532,12 +532,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "abb8f00bbf0e87cebcc1b45c5d87575db5aa31c3",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T04:33:58.000Z",
       "message": "feat: Agregar un descuento del 1% e impuestos del 4% por categoria Electrónicos",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/abb8f00bbf0e87cebcc1b45c5d87575db5aa31c3"
     },
     "stats": {
       "total": 29,
@@ -547,6 +547,25 @@
     },
     "coverage": 83.08,
     "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T04:35:38.000Z",
+      "message": "feat: Agregar impuesto del 2% por categoria Vestimenta",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 83.08,
+    "test_count": 24,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -60,4 +60,14 @@ describe('calculo de los descuentos por categoria', ()=>{
 
         expect(precioTotal.calcularTotal()).toBe(4558.11);
     })
+
+    it('Si la categoria es Vestimenta, no aplica descuento y suma 2% de impuesto', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 12;
+        precioTotal.precio = 365;
+        precioTotal.estado = "UT";
+        precioTotal.categoria = "Vestimenta";
+
+        expect(precioTotal.calcularTotal()).toBe(4520.93);
+    })
 })

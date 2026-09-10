@@ -10,6 +10,7 @@ const impuestosPorCategoria = {
     "Bebidas Alcohólicas": 0.07,
     "Muebles": 0.03,
     "Electrónicos": 0.04,
+    "Vestimenta": 0.02,
 };
 
 const descuentosPorCategoria = {
