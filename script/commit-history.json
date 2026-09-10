@@ -760,12 +760,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "313c96588f929a08286ee4fefb31b9bea5b18339",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T06:14:57.000Z",
       "message": "style: Agregar un combo box para elegir el tipo de cliente",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/313c96588f929a08286ee4fefb31b9bea5b18339"
     },
     "stats": {
       "total": 12,
@@ -775,6 +775,25 @@
     },
     "coverage": 86.36,
     "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T06:20:10.000Z",
+      "message": "feat: Agregar descuento de 0% por cliente Normal",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 27,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 87.1,
+    "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
   }

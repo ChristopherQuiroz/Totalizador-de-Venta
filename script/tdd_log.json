@@ -1176,9 +1176,47 @@
     "testId": 39
   },
   {
-    "commitId": "HEAD",
+    "commitId": "313c96588f929a08286ee4fefb31b9bea5b18339",
     "commitName": "style: Agregar un combo box para elegir el tipo de cliente",
     "commitTimestamp": 1789020898837,
     "testId": 40
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 25,
+    "numTotalTests": 34,
+    "timestamp": 1789021020478,
+    "success": false,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 25,
+    "numTotalTests": 34,
+    "timestamp": 1789021052709,
+    "success": false,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 25,
+    "numTotalTests": 34,
+    "timestamp": 1789021080500,
+    "success": false,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1789021176037,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento de 0% por cliente Normal",
+    "commitTimestamp": 1789021211603,
+    "testId": 41
   }
 ]

@@ -27,7 +27,7 @@ export default class PrecioTotal{
         this.estado = " ";
         this.categoria = " ";
         this.peso = 0;
-        this.tipoCliente = "Cliente regular";
+        this.tipoCliente = " ";
     }
     
     calcularPrecioNeto(){
@@ -54,6 +54,7 @@ export default class PrecioTotal{
         total = PrecioTotal.calcularDescuentoEnBaseTotal(total);
         total = PrecioTotal.redondear(total);
         total = PrecioTotal.calcularDescuentoPorCategoria(total, this.categoria);
+        total = PrecioTotal.calcularDescuentoPorCliente(total, this.tipoCliente);
 
         return PrecioTotal.redondear(total);
     }
@@ -112,6 +113,16 @@ export default class PrecioTotal{
     static calcularDescuentoPorCategoria(total, categoria){
         const porcentaje = descuentosPorCategoria[categoria] ?? 0;
         const descuento = total * porcentaje;
+        return PrecioTotal.redondear(total - descuento);
+    }
+
+    static calcularDescuentoPorCliente(total, tipoCliente){
+        const descuentos = {
+            "Normal": 0,
+        };
+        const porcentaje = descuentos[tipoCliente] ?? 0;
+        const descuento = total * porcentaje;
+
         return PrecioTotal.redondear(total - descuento);
     }
 
