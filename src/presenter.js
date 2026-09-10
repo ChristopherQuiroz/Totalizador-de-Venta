@@ -28,16 +28,21 @@ function obtenerPrecioTotal() {
 
 function mostrarConcepto(id, valor) {
 	const fila = document.querySelector(`#${id}-row`);
+	const concepto = document.querySelector(`#${id}`);
+	if (!fila || !concepto) {
+		return;
+	}
+
 	const visible = valor !== 0;
 	fila.hidden = !visible;
-	document.querySelector(`#${id}`).textContent = visible ? valor : '';
+	concepto.textContent = visible ? valor : '';
 }
 
 function limpiarResultados() {
 	document.querySelector('#netPrice').textContent = '';
 	document.querySelector('#volumetricExtra').textContent = '';
 	document.querySelector('#total').textContent = '';
-	['stateTaxes', 'categoryTaxes', 'amountDiscount', 'categoryDiscount'].forEach((id) => {
+	['stateTaxes', 'categoryTaxes', 'amountDiscount', 'categoryDiscount', 'specialDiscount'].forEach((id) => {
 		mostrarConcepto(id, 0);
 	});
 }
@@ -57,7 +62,7 @@ function mostrarResultados() {
 		totalConDescuentoMonto,
 		precioTotal.tipoCliente,
 	);
-	const totalConDescuentoEspecial = precioTotal.calcularDescuentoEspecial(
+	const totalConDescuentoEspecial = PrecioTotal.calcularDescuentoEspecial(
 		totalSinDescuentoEspecial,
 		precioNeto,
 		precioTotal.categoria,

@@ -1324,9 +1324,23 @@
     "testId": 46
   },
   {
-    "commitId": "HEAD",
+    "commitId": "94bbc8428447b7c7d9b980c4b062275eec8da0b2",
     "commitName": "feat: Agregar descuento de 200$ si el cliente es Especial, precio neto mayor a 7000 y la categoria de producto es Electronicos",
     "commitTimestamp": 1789021748513,
     "testId": 46
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1789022478378,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Darle a confirmar ahora si calcula la respuesta",
+    "commitTimestamp": 1789022744922,
+    "testId": 47
   }
 ]
