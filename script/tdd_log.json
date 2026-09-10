@@ -1214,9 +1214,31 @@
     "testId": 41
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7341593b70e5e5849a5182dd6a506ff4164d8b1b",
     "commitName": "feat: Agregar descuento de 0% por cliente Normal",
     "commitTimestamp": 1789021211603,
     "testId": 41
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 1,
+    "numTotalTests": 35,
+    "timestamp": 1789021286503,
+    "success": false,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 0,
+    "numTotalTests": 35,
+    "timestamp": 1789021297927,
+    "success": true,
+    "testId": 42
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento del 0.5% si el cliente es Recurrente",
+    "commitTimestamp": 1789021330464,
+    "testId": 42
   }
 ]
