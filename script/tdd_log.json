@@ -846,9 +846,31 @@
     "testId": 25
   },
   {
-    "commitId": "HEAD",
+    "commitId": "00dacc82b7a92909100a3757ec8f984dc5038fb8",
     "commitName": "feat: Agregar impuesto del 7% por categoria Bebidas Alcohólicas",
     "commitTimestamp": 1789012085047,
     "testId": 25
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 1,
+    "numTotalTests": 21,
+    "timestamp": 1789013931310,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 0,
+    "numTotalTests": 21,
+    "timestamp": 1789013970120,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento del 1.5% por categoria Muebles de Escritorio",
+    "commitTimestamp": 1789014048668,
+    "testId": 26
   }
 ]

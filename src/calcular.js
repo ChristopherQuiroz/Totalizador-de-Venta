@@ -78,6 +78,8 @@ export default class PrecioTotal{
         let descuento = 0;
         if(categoria == "Alimentos"){
             descuento = total*0.02;
+        } else if(categoria == "Material de Escritorio"){
+            descuento = total*0.015;
         }
 
         return total - descuento;

@@ -30,4 +30,14 @@ describe('calculo de los descuentos por categoria', ()=>{
 
         expect(precioTotal.calcularTotal()).toBe(4728.98);
     })
+
+    it('Si la categoria es Material de Escritorio, aplica un descuento adicional del 1.5%', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 12;
+        precioTotal.precio = 365;
+        precioTotal.estado = "UT";
+        precioTotal.categoria = "Material de Escritorio";
+
+        expect(precioTotal.calcularTotal()).toBe(4371.14);
+    })
 })

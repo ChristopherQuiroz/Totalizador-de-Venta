@@ -475,12 +475,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "00dacc82b7a92909100a3757ec8f984dc5038fb8",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T03:48:03.000Z",
       "message": "feat: Agregar impuesto del 7% por categoria Bebidas Alcohólicas",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/00dacc82b7a92909100a3757ec8f984dc5038fb8"
     },
     "stats": {
       "total": 38,
@@ -490,6 +490,25 @@
     },
     "coverage": 83.08,
     "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T04:20:47.000Z",
+      "message": "feat: Agregar descuento del 1.5% por categoria Muebles de Escritorio",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 83.58,
+    "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
   }
