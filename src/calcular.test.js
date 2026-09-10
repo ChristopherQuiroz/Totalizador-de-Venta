@@ -96,4 +96,13 @@ describe('calculo de precio total', ()=>{
 
         expect(precioTotal.calcularTotal()).toBe(6942.91);
     })
+
+    it('Calcular descuento del 10% si el precio neto es mayor a 10000', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 1000;
+        precioTotal.precio = 10;
+        precioTotal.estado = "UT";
+
+        expect(precioTotal.calcularTotal()).toBe(9598.50);
+    })
 })

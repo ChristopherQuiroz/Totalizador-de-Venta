@@ -666,9 +666,31 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "95cef6db1b9f3b71a82178bf6d1e2de03364961c",
     "commitName": "feat: Agregar descuento si el total es mayor a 7000",
     "commitTimestamp": 1789008385539,
     "testId": 19
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 1,
+    "numTotalTests": 16,
+    "timestamp": 1789008616562,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1789008664648,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento para si el total es mayor a 10000",
+    "commitTimestamp": 1789008724960,
+    "testId": 20
   }
 ]

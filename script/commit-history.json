@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "95cef6db1b9f3b71a82178bf6d1e2de03364961c",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T02:46:21.000Z",
       "message": "feat: Agregar descuento si el total es mayor a 7000",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/95cef6db1b9f3b71a82178bf6d1e2de03364961c"
     },
     "stats": {
       "total": 13,
@@ -376,6 +376,25 @@
     },
     "coverage": 81.03,
     "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T02:52:02.000Z",
+      "message": "feat: Agregar descuento para si el total es mayor a 10000",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 81.67,
+    "test_count": 16,
     "failed_tests": 0,
     "conclusion": "success"
   }
