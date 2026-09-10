@@ -27,6 +27,7 @@ export default class PrecioTotal{
         this.estado = " ";
         this.categoria = " ";
         this.peso = 0;
+        this.tipoCliente = "Cliente regular";
     }
     
     calcularPrecioNeto(){

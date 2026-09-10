@@ -741,12 +741,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "91ca2a762155efd95dc42440769a9057be691843",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T06:12:03.000Z",
       "message": "feat: Agregar costo extra de 9$ si el peso volumetrico es mayor a 200",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/91ca2a762155efd95dc42440769a9057be691843"
     },
     "stats": {
       "total": 13,
@@ -755,6 +755,25 @@
       "date": "2026-09-10"
     },
     "coverage": 86.21,
+    "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T06:14:57.000Z",
+      "message": "style: Agregar un combo box para elegir el tipo de cliente",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 86.36,
     "test_count": 33,
     "failed_tests": 0,
     "conclusion": "success"

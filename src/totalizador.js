@@ -3,7 +3,8 @@ const campos_formulario = [
   { id: 'itemPrice', nombre: 'Precio por Item' },
   { id: 'statusCode', nombre: 'Código de Estado' },
   { id: 'category', nombre: 'Categoría'},
-  { id: 'volumetricWeight', nombre: 'Peso volumétrico del pedido'}
+  { id: 'volumetricWeight', nombre: 'Peso volumétrico del pedido'},
+  { id: 'customerType', nombre: 'Tipo de cliente'}
 ];
 
 const codigosValidos = ["UT", "NV", "TX", "AL", "CA"];

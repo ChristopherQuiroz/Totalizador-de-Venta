@@ -21,6 +21,7 @@ function obtenerPrecioTotal() {
 	precioTotal.precio = document.querySelector('#itemPrice').value;
 	precioTotal.estado = document.querySelector('#statusCode').value;
 	precioTotal.categoria = document.querySelector('#category').value;
+	precioTotal.tipoCliente = document.querySelector('#customerType').value;
 	precioTotal.peso = document.querySelector('#volumetricWeight').value;
 	return precioTotal;
 }
