@@ -1148,9 +1148,31 @@
     "testId": 38
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f48444181ac7d2a5579e01c228ca7383076beabb",
     "commitName": "feat: Agregar costo extra de 8$ si el peso volumetrico esta entre 101-200",
     "commitTimestamp": 1789020623738,
     "testId": 38
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 1,
+    "numTotalTests": 33,
+    "timestamp": 1789020681678,
+    "success": false,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 0,
+    "numTotalTests": 33,
+    "timestamp": 1789020693972,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar costo extra de 9$ si el peso volumetrico es mayor a 200",
+    "commitTimestamp": 1789020724625,
+    "testId": 39
   }
 ]
