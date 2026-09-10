@@ -34,6 +34,7 @@ function mostrarConcepto(id, valor) {
 
 function limpiarResultados() {
 	document.querySelector('#netPrice').textContent = '';
+	document.querySelector('#volumetricExtra').textContent = '';
 	document.querySelector('#total').textContent = '';
 	['stateTaxes', 'categoryTaxes', 'amountDiscount', 'categoryDiscount'].forEach((id) => {
 		mostrarConcepto(id, 0);
@@ -45,7 +46,8 @@ function mostrarResultados() {
 	const precioNeto = precioTotal.calcularPrecioNeto();
 	const impuestoEstado = PrecioTotal.calcularImpuesto(precioNeto, precioTotal.estado);
 	const impuestoCategoria = PrecioTotal.calcularImpuestoPorCategoria(precioNeto, precioTotal.categoria);
-	const subtotal = precioNeto + impuestoEstado + impuestoCategoria;
+	const costoExtraPeso = PrecioTotal.calcularCostoExtraPorPeso(precioTotal.peso);
+	const subtotal = precioNeto + impuestoEstado + impuestoCategoria + costoExtraPeso;
 	const totalConDescuentoMonto = PrecioTotal.calcularDescuentoEnBaseTotal(subtotal);
 	const descuentoMonto = PrecioTotal.redondear(subtotal - totalConDescuentoMonto);
 	const total = precioTotal.calcularTotal();
@@ -54,6 +56,7 @@ function mostrarResultados() {
 	document.querySelector('#netPrice').textContent = precioNeto;
 	mostrarConcepto('stateTaxes', impuestoEstado);
 	mostrarConcepto('categoryTaxes', impuestoCategoria);
+	document.querySelector('#volumetricExtra').textContent = costoExtraPeso;
 	mostrarConcepto('amountDiscount', descuentoMonto);
 	mostrarConcepto('categoryDiscount', descuentoCategoria);
 	document.querySelector('#total').textContent = total;

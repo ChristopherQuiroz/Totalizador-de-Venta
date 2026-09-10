@@ -26,6 +26,7 @@ export default class PrecioTotal{
         this.precio = 0;
         this.estado = " ";
         this.categoria = " ";
+        this.peso = 0;
     }
     
     calcularPrecioNeto(){
@@ -45,8 +46,9 @@ export default class PrecioTotal{
         const impuestoEstado = PrecioTotal.calcularImpuesto(precioNeto, this.estado);
         const impuestoCategoria = PrecioTotal.calcularImpuestoPorCategoria(precioNeto, this.categoria);
         const impuesto = impuestoEstado + impuestoCategoria;
+        const costoExtraPeso = PrecioTotal.calcularCostoExtraPorPeso(this.peso);
 
-        let total = precioNeto + impuesto;
+        let total = precioNeto + impuesto + costoExtraPeso;
 
         total = PrecioTotal.calcularDescuentoEnBaseTotal(total);
         total = PrecioTotal.redondear(total);
@@ -69,6 +71,16 @@ export default class PrecioTotal{
     static calcularImpuestoPorCategoria(precioNeto, categoria){
         const porcentaje = impuestosPorCategoria[categoria] ?? 0;
         return PrecioTotal.redondear(precioNeto * porcentaje);
+    }
+
+    static calcularCostoExtraPorPeso(peso){
+        const pesoVolumetrico = Number(peso);
+
+        if (pesoVolumetrico >= 0 && pesoVolumetrico <= 10) {
+            return 0;
+        }
+
+        return 0;
     }
 
     static calcularDescuentoEnBaseTotal(total){

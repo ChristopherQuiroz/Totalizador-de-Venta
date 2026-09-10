@@ -992,9 +992,31 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6031dd0ba72d2227102b51605a7d8c7e7c25c6f1",
     "commitName": "feat: Agregar campo para el peso volumetrico",
     "commitTimestamp": 1789018075754,
     "testId": 32
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 1,
+    "numTotalTests": 27,
+    "timestamp": 1789019111695,
+    "success": false,
+    "testId": 33
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1789019212946,
+    "success": true,
+    "testId": 33
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Agregar mostrar y calcular un extra de 0$ si el peso volumétrico esta entre 0-10",
+    "commitTimestamp": 1789019261997,
+    "testId": 33
   }
 ]

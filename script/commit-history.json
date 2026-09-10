@@ -608,12 +608,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6031dd0ba72d2227102b51605a7d8c7e7c25c6f1",
     "author": "Chris",
     "commit": {
       "date": "2026-09-10T05:27:52.000Z",
       "message": "feat: Agregar campo para el peso volumetrico",
-      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/6031dd0ba72d2227102b51605a7d8c7e7c25c6f1"
     },
     "stats": {
       "total": 29,
@@ -623,6 +623,25 @@
     },
     "coverage": 84.06,
     "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Chris",
+    "commit": {
+      "date": "2026-09-10T05:47:40.000Z",
+      "message": "feat:Agregar mostrar y calcular un extra de 0$ si el peso volumétrico esta entre 0-10",
+      "url": "https://github.com/ChristopherQuiroz/Totalizador-de-Venta/commit/HEAD"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 39,
+      "deletions": 2,
+      "date": "2026-09-10"
+    },
+    "coverage": 84,
+    "test_count": 27,
     "failed_tests": 0,
     "conclusion": "success"
   }

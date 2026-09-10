@@ -17,6 +17,10 @@ describe('calculo de precio total', ()=>{
         expect(precioTotal.calcularPrecioNeto()).toBe(4380);
     })
 
+    it('Si el peso volumetrico esta entre 0 y 10, el costo extra es 0', ()=>{
+        expect(PrecioTotal.calcularCostoExtraPorPeso(10)).toBe(0);
+    })
+
     it('Si tengo 12 items y el precio es de 365 -> precio neto: 4380', ()=>{
         const precioTotal = new PrecioTotal();
         precioTotal.cantidad = 12;
