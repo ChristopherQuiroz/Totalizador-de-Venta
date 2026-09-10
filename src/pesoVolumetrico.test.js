@@ -44,4 +44,15 @@ describe('Calcular el descuento en $ segun el peso volumetrico', ()=>{
 
         expect(precioTotal.calcularTotal()).toBe(4568.24);
     })
+
+    it('Se cobra un extra de 6.5 si el peso volumetrico esta entre 81-100', ()=>{
+        const precioTotal = new PrecioTotal();
+        precioTotal.cantidad = 12;
+        precioTotal.precio = 365;
+        precioTotal.estado = "UT";
+        precioTotal.categoria = "Muebles";
+        precioTotal.peso = 90;
+
+        expect(precioTotal.calcularTotal()).toBe(4568.71);
+    })
 })

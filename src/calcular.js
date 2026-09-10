@@ -84,6 +84,8 @@ export default class PrecioTotal{
             return 5;
         } else if(pesoVolumetrico >= 41 && pesoVolumetrico <= 80){
             return 6;
+        } else if(pesoVolumetrico >= 81 && pesoVolumetrico <= 100){
+            return 6.5;
         }
 
         return 0;
