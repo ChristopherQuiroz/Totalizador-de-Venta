@@ -53,6 +53,17 @@ function mostrarResultados() {
 	const descuentoMonto = PrecioTotal.redondear(subtotal - totalConDescuentoMonto);
 	const total = precioTotal.calcularTotal();
 	const descuentoCategoria = PrecioTotal.redondear(totalConDescuentoMonto - total);
+	const totalSinDescuentoEspecial = PrecioTotal.calcularDescuentoPorCliente(
+		totalConDescuentoMonto,
+		precioTotal.tipoCliente,
+	);
+	const totalConDescuentoEspecial = precioTotal.calcularDescuentoEspecial(
+		totalSinDescuentoEspecial,
+		precioNeto,
+		precioTotal.categoria,
+		precioTotal.tipoCliente,
+	);
+	const montoDescuentoEspecial = PrecioTotal.redondear(totalSinDescuentoEspecial - totalConDescuentoEspecial);
 
 	document.querySelector('#netPrice').textContent = precioNeto;
 	mostrarConcepto('stateTaxes', impuestoEstado);
@@ -60,6 +71,7 @@ function mostrarResultados() {
 	document.querySelector('#volumetricExtra').textContent = costoExtraPeso;
 	mostrarConcepto('amountDiscount', descuentoMonto);
 	mostrarConcepto('categoryDiscount', descuentoCategoria);
+	mostrarConcepto('specialDiscount', montoDescuentoEspecial);
 	document.querySelector('#total').textContent = total;
 }
 

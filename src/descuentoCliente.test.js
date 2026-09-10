@@ -48,5 +48,17 @@ describe('calculo de descuentos por tipo de cliente', ()=>{
 
 		expect(precioTotal.calcularTotal()).toBe(4371.14);
 	})
+
+	it('Si Recurrente compra Alimentos por mas de 3000, aplica 100 de descuento', ()=>{
+		const precioTotal = new PrecioTotal();
+		precioTotal.cantidad = 12;
+		precioTotal.precio = 365;
+		precioTotal.estado = "UT";
+		precioTotal.categoria = "Alimentos";
+		precioTotal.peso = 0;
+		precioTotal.tipoCliente = "Recurrente";
+
+		expect(precioTotal.calcularTotal()).toBe(4227.22);
+	})
     
 })

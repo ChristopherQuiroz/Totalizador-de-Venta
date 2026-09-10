@@ -1280,9 +1280,31 @@
     "testId": 44
   },
   {
-    "commitId": "HEAD",
+    "commitId": "138ec4bb0606c6860898dd0477d02eefd1da2fa8",
     "commitName": "feat: Agregar descuento del 1.5% si cliente es Especial",
     "commitTimestamp": 1789021494372,
     "testId": 44
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 1,
+    "numTotalTests": 38,
+    "timestamp": 1789021580897,
+    "success": false,
+    "testId": 45
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1789021596196,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Agregar descuento especial de 100$ si el cliente es Recurrente, precio neto es mayor a 300 y categoria de producto es Alimentos",
+    "commitTimestamp": 1789021644058,
+    "testId": 45
   }
 ]

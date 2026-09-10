@@ -55,6 +55,7 @@ export default class PrecioTotal{
         total = PrecioTotal.redondear(total);
         total = PrecioTotal.calcularDescuentoPorCategoria(total, this.categoria);
         total = PrecioTotal.calcularDescuentoPorCliente(total, this.tipoCliente);
+        total = PrecioTotal.calcularDescuentoEspecial(total, precioNeto, this.categoria, this.tipoCliente);
 
         return PrecioTotal.redondear(total);
     }
@@ -127,6 +128,14 @@ export default class PrecioTotal{
         const descuento = total * porcentaje;
 
         return PrecioTotal.redondear(total - descuento);
+    }
+
+    static calcularDescuentoEspecial(total, precioNeto, categoria, tipoCliente){
+        if (precioNeto > 3000 && categoria === "Alimentos" && tipoCliente === "Recurrente") {
+            return PrecioTotal.redondear(total - 100);
+        }
+
+        return total;
     }
 
     static redondear(valor){
